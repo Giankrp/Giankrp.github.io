@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+
+    <h1>Indice</h1>
+    <ul>
+
+      <li>
+        <a href="formatoTexto.html">Formato de texto</a>
+      </li>
+
+      <li>
+        <a href="listas.html">Listas</a>
+      </li>
+      <li>
+        <a href="tablas.html">Tablas</a>
+      </li>
+      <li>
+        <a href="index.html">Indice</a>
+      </li>
+    </ul>
+
+  </nav>
+  <section>
+    <label>Datalist: <input type="text" name="datalist" list="datalist"></label>
+    <datalist id="datalist">
+      <option value="papas"></option>
+      <option value="si"></option>
+      <option value="hola"></option>
+    </datalist>
+
+    <form action="" method="post">
+      Escriba su nombre y apellidos:
+      <label for="name"> nombre: </label>
+      <input type="text" placeholder="Gian" name="nombre" id="name" value="" size="25" maxlength="55" />
+
+      <label for="contrasena">Contraseña</label> <br />
+      <input type="password" placeholder="Patiño" name="contrasena" value="" />
+
+      Puestos de trabajo buscados: <br />
+      <label for="puesto_directivo"> Dirección</label>
+      <input name="puesto_directivo" type="checkbox" value="direccion" />
+      <label for="puesto_tecnico">Técnico</label>
+      <input name="puesto_tecnico" type="checkbox" value="tecnico" />
+      <label for="puesto_empleado"> Empleado</label>
+      <input name="puesto_empleado" type="checkbox" value="empleado" />
+
+      Sexo <br />
+      <label for="sexo"> Hombre</label>
+      <input type="radio" name="sexo" value="hombre" checked="checked" />
+      <label for="sexo">Mujer</label>
+      <input type="radio" name="sexo" value="mujer" />
+      <br>
+      <input type="submit" name="buscar" value="Buscar" />
+
+      <input type="reset" name="limpiar" value="Borrar datos del formulario" />
+
+      <label for="adjunto"> Fichero adjunto</label>
+      <input type="file" name="adjunto" value="Subir archivo">
+
+      <input type="hidden" name="url_previa" value="si" />
+
+      <input type="image" name="enviar" />
+
+      <input type="submit" name="guardar" value="Guardar Cambios">
+    </form>
+
+  </section>
+</body>
+
+</html>
